@@ -5,6 +5,9 @@
 #include "Algorithms/SelectionSort.hpp"
 #include "Algorithms/BubbleSort.hpp"
 #include "Algorithms/InsertionSort.hpp"
+#include "Algorithms/MergeSort.hpp"
+#include "Algorithms/HeapSort.hpp"
+#include "Algorithms/QuickSort.hpp"
 
 namespace Sorting {
     // List of Available Algorithms
@@ -12,10 +15,9 @@ namespace Sorting {
         SELECTIONSORT,
         BUBBLESORT,
         INSERTIONSORT,
-        // MERGESORT,
-        // BMERGESORT,
-        // HEAPSORT,
-        // QUICKSORT,
+        MERGESORT,
+        HEAPSORT,
+        QUICKSORT,
         NUM_OF_ALGORITHMS
     };
 }

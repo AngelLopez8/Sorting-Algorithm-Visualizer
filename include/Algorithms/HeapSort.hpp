@@ -1,30 +1,32 @@
-#ifndef INSERTIONSORT_HPP
-#define INSERTIONSORT_HPP
+#ifndef HEAPSORT_HPP
+#define HEAPSORT_HPP
 
 #include "SortingAlgorithm.hpp"
 
 namespace Sorting {
-    class InsertionSort : public SortingAlgorithm {
+    class HeapSort : public SortingAlgorithm {
         public:
             /**
-             * @brief Construct a new Insertion Sort object
+             * @brief Construct a new Bubble Sort object
              * 
              * @param int Length of Data
              */
-            InsertionSort(int len) : SortingAlgorithm(len, 1) {
+            HeapSort(int len) : SortingAlgorithm(len) {
                 process = 0;
+                currentIndex = length / 2 - 1;
             }
 
         private:
-            int elapsed;
             int process;
-            int key;
 
             // Resets values to default
             void set_default();
 
             // Runs a sort iteration
             void sort();
+
+            // Convert data between indexes to a Heap Structure
+            void heapify(int, int);
     };
 }
 

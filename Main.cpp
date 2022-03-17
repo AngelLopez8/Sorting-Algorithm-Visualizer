@@ -38,10 +38,19 @@ int main() {
                             case Sorting::INSERTIONSORT:
                                 currentAlgorithm = new Sorting::InsertionSort(LENGTH);
                                 break;
+                            case Sorting::MERGESORT:
+                                currentAlgorithm = new Sorting::MergeSort(LENGTH);
+                                break;
+                            case Sorting::HEAPSORT:
+                                currentAlgorithm = new Sorting::HeapSort(LENGTH);
+                                break;
+                            case Sorting::QUICKSORT:
+                                currentAlgorithm = new Sorting::QuickSort(LENGTH);
+                                break;
                             default:
                                 break;
                         }
-                        }
+                    }
                 default:
                     break;
             }

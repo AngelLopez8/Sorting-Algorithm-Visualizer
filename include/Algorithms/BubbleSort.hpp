@@ -1,7 +1,7 @@
 #ifndef BUBBLESORT_HPP
 #define BUBBLESORT_HPP
 
-#include "../../include/Algorithms/SortingAlgorithm.hpp"
+#include "SortingAlgorithm.hpp"
 
 namespace Sorting {
     class BubbleSort : public SortingAlgorithm {

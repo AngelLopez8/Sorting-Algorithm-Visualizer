@@ -1,7 +1,7 @@
 #ifndef SELECTIONSORT_HPP
 #define SELECTIONSORT_HPP
 
-#include "../../include/Algorithms/SortingAlgorithm.hpp"
+#include "SortingAlgorithm.hpp"
 
 namespace Sorting {
     class SelectionSort : public SortingAlgorithm {
