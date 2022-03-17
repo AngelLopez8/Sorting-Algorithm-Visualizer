@@ -5,17 +5,39 @@ SFML library.
 ## Algorithms
 ### Selection Sort
 **Description:** The algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 ### Bubble Sort
 **Description:** The algorithm works by repeatedly swapping the adjacent elements if they are in wrong order.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 ### Insertion Sort
-**Description:** The algorithm works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and unsorted part. Values from 
-the unsorted part are picked and placed at the correct position in the sorted part.
+**Description:** The algorithm works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 ### Merge Sort
 **Description:** The algorithm is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 ### Heap Sort
-**Description:** The algorithm is a comparison-based sorting techique based on Binary Heap data structure. It is similar to selection sort where we first find 
-the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements.
+**Description:** The algorithm is a comparison-based sorting techique based on Binary Heap data structure. It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 ### Quick Sort
 **Description:** The algorithm is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+**Time Complexity:**
+| Worst-Case | Average-Case | Best-Case |
+| :---       |     :---:    |      ---: |
+|    O(n)    |     O(n)     |    O(n)   |
 
 ## Set Up
