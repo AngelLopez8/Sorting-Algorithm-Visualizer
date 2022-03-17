@@ -44,3 +44,6 @@ To Install Visit: https://www.sfml-dev.org/download/sfml/2.5.1/
 |   O(n<sup>2</sup>)    |   O(n log n)          |   O(n log n)          |
 
 ## Set Up
+1. Copy Repo
+2. Run the following:
+    - `make && ./Main`
