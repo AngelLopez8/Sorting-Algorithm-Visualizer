@@ -8,7 +8,7 @@ SFML library.
 **Time Complexity:**
 | Worst-Case | Average-Case | Best-Case |
 | :---       |     :---:    |      ---: |
-|   O(n^2)   |      O(n^2)  |   O(n^2)    |
+|   O(n<sub>2</sub>)   |      O(n<sub>2</sub>)  |   O(n<sub>2</sub>)    |
 ### Bubble Sort
 **Description:** The algorithm works by repeatedly swapping the adjacent elements if they are in wrong order.
 **Time Complexity:**
