@@ -47,3 +47,7 @@ To Install visit: https://www.sfml-dev.org/download/sfml/2.5.1/
 |   Worst-Case          |   Average-Case        |   Best-Case           |
 |   :---:               |   :---:               |   :---:               |
 |   O(n<sup>2</sup>)    |   O(n log n)          |   O(n log n)          |
+
+## Controls
+- <kbd>Space</kpd>: Restart Algorithm from beginning
+- <kbd>Tab</kpd>: Switch to next Algorithm

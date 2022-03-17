@@ -7,6 +7,7 @@ int main() {
 
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Sorting Algorithm Visualizer", style);
 
+    // Current Algorithm running
     Sorting::Algorithms current = Sorting::SELECTIONSORT;
     Sorting::SortingAlgorithm* currentAlgorithm = new Sorting::SelectionSort(LENGTH);
 
@@ -21,9 +22,11 @@ int main() {
                     window.close();
                     break;
                 case sf::Event::KeyReleased:
+                    // Press Space to Restart Algorithm from beginning
                     if (event.key.code == sf::Keyboard::Space){
                         currentAlgorithm->restart();
                     }
+                    // Press Tab to visualize the next algorithm
                     else if (event.key.code == sf::Keyboard::Tab){
                         current = static_cast<Sorting::Algorithms>((current + 1) % Sorting::NUM_OF_ALGORITHMS);
                         delete currentAlgorithm;
