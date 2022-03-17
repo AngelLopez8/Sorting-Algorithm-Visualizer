@@ -1,7 +1,9 @@
 # Sorting Algorithm Visualizer
-A C++ Application that visualizes a few Sorting Algorithms, using SFML which is :
-> Simple and Fast Multimedia Library ([SFML](https://www.sfml-dev.org/)) is a cross-platform software development library designed to provide a simple 
+A C++ Application that visualizes a few Sorting Algorithms, using SFML:
+> A Simple and Fast Multimedia Library ([SFML](https://www.sfml-dev.org/)) is a cross-platform software development library designed to provide a simple 
 > application programming interface to various multimedia components in computers.
+
+To Install Visit: https://www.sfml-dev.org/download/sfml/2.5.1/
 
 ## Algorithms
 ### Selection Sort
