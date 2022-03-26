@@ -32,9 +32,15 @@ namespace Sorting {
                 int dataA = data[elapsed].getSize().y;
                 int dataB = data[elapsed + 1].getSize().y;
 
+                dataAccess += 2;
+                comparisons++;
+
                 if (dataA > dataB) {
+                    exchanges++;
+                    
                     // Swap current elapsed index and next elapsed index heights
                     swap(data[elapsed], data[elapsed + 1]);
+                    
                 }
 
                 // Increment elapsed index for next iteration

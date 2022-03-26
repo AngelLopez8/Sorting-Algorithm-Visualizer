@@ -12,6 +12,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             QuickSort(int len) : SortingAlgorithm(len) {
+                name = "Quick Sort";
+
                 process = 0;
                 process2 = 0;
                 innerProcess = 0;

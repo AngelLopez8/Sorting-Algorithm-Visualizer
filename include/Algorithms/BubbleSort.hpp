@@ -12,6 +12,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             BubbleSort(int len) : SortingAlgorithm(len) {
+                name = "Bubble Sort";
+                
                 elapsed = 0;
             }
 

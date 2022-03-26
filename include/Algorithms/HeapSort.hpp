@@ -12,6 +12,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             HeapSort(int len) : SortingAlgorithm(len) {
+                name = "Heap Sort";
+
                 process = 0;
                 currentIndex = length / 2 - 1;
             }

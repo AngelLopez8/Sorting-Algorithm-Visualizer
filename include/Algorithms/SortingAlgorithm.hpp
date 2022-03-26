@@ -25,7 +25,10 @@ namespace Sorting {
              * @param int Length of data 
              * @param int Beginning Index of algorithm 
              */
-            SortingAlgorithm(int len, int i = 0) : length(len), dataWidth(WIDTH/len), currentIndex(i) {
+            SortingAlgorithm(int len, int i = 0) : length(len), dataWidth(WIDTH/len), currentIndex(i) {                
+                comparisons = 0;
+                exchanges = 0;
+                dataAccess = 0;
                 generate_data();
             }
 
@@ -61,6 +64,8 @@ namespace Sorting {
             int exchanges;
             int dataAccess;
 
+            std::string name;
+
             virtual void sort() = 0;
             virtual void set_default() = 0;
 
@@ -72,6 +77,9 @@ namespace Sorting {
 
             // Change all data fillColor to Green to show sorted
             void complete();
+
+            // Draw Text onto Screen
+            void draw_info(sf::RenderWindow&);
     };
 }
 

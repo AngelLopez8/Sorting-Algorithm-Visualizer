@@ -12,6 +12,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             SelectionSort(int len) : SortingAlgorithm(len) {
+                name = "Selection Sort";
+
                 elapsed = currentIndex + 1;
                 minIndex = currentIndex;
             }

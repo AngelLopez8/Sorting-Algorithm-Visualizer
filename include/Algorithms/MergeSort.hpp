@@ -27,6 +27,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             MergeSort(int len) : SortingAlgorithm(len) {
+                name = "Merge Sort";
+
                 process = 0;
 
                 pointsLength = 0;

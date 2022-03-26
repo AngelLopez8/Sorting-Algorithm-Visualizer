@@ -12,6 +12,8 @@ namespace Sorting {
              * @param int Length of Data
              */
             InsertionSort(int len) : SortingAlgorithm(len, 1) {
+                name = "Insertion Sort";
+
                 process = 0;
             }
 
