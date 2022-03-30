@@ -24,7 +24,7 @@ namespace Sorting {
     }
 
     /**
-     * @brief 
+     * @brief Main function that implements quick sort
      * 
      */
     void QuickSort::quicksort() {
@@ -73,7 +73,11 @@ namespace Sorting {
     }
 
     /**
-     * @brief 
+     * @brief Selects the last element as pivot element, 
+     *   places that pivo element correctly in the array 
+     *   in such a way that all the elements to the left 
+     *   of the pivot are lesser than the pivot and all 
+     *   elements to the right of pivot are greater than it.
      * 
      */
     void QuickSort::partition() {
