@@ -119,7 +119,7 @@ namespace Sorting {
 
         // Create Text Instances
         sf::Text Name(name, arial, 10);
-        // sf::Text Compare("Comparisons: " + std::to_string(comparisons), arial, 5);
+        // sf::Text Compare("Comparisons: " + "std::to_string(comparisons)", arial, 5);
         // sf::Text Exchange("Exchanges: " + std::to_string(exchanges), arial, 5);
         // sf::Text DataAccess("Data Access: " + std::to_string(dataAccess), arial, 5);
 
