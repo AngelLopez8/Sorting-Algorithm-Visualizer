@@ -10,6 +10,8 @@ namespace Sorting {
         currentIndex = 0;
 
         elapsed = 0;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**

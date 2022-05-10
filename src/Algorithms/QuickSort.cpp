@@ -12,6 +12,8 @@ namespace Sorting {
         low = 0;
         high = length - 1;
         delete[] stack;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**
@@ -83,6 +85,9 @@ namespace Sorting {
     void QuickSort::partition() {
         if (innerProcess == 0) {
             pivot = data[high].getSize().y;
+
+            dataAccess++;
+
             i = (low - 1);
             currentIndex = low;
 
@@ -91,9 +96,15 @@ namespace Sorting {
         if (innerProcess == 1) {
             if (currentIndex <= high - 1) {
                 int current = data[currentIndex].getSize().y;
+
+                dataAccess++;
+                comparisons++;
+
                 if (current <= pivot) {
                     i++;
                     swap(data[i], data[currentIndex]);
+
+                    exchanges++;
                 }
                 currentIndex++;
             }
@@ -102,6 +113,9 @@ namespace Sorting {
         }
         if (innerProcess == 2) {
             swap(data[i + 1], data[high]);
+
+            exchanges++;
+
             pi = (i+1);
 
             innerProcess++;

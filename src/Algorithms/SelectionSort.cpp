@@ -12,6 +12,8 @@ namespace Sorting {
 
         elapsed = currentIndex + 1;
         minIndex = currentIndex;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**
@@ -33,6 +35,8 @@ namespace Sorting {
                 int height = data[elapsed].getSize().y;
                 int min = data[minIndex].getSize().y;
 
+                dataAccess += 2;
+                comparisons++;
 
                 if (height < min) {
                     // Reset fillColor(s) to White
@@ -56,6 +60,8 @@ namespace Sorting {
 
                 // Swap currentIndex and minimum index heights
                 swap(data[currentIndex], data[minIndex]);
+
+                exchanges++;
 
                 // Set currentIndex fillColor back to White as it is sorted
                 data[currentIndex].setFillColor(sf::Color::White);

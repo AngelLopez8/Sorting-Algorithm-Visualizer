@@ -10,6 +10,8 @@ namespace Sorting {
         currentIndex = 0;
 
         process = 0;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**
@@ -138,10 +140,16 @@ namespace Sorting {
             R = new int[n2];
 
             // Copy data to temporary arrays
-            for (ii = 0; ii < n1; ii++)
+            for (ii = 0; ii < n1; ii++) {
                 L[ii] = data[leftIndex + ii].getSize().y;
-            for (jj = 0; jj < n2; jj++)
+
+                dataAccess++;    
+            }
+            for (jj = 0; jj < n2; jj++) {
                 R[jj] = data[midIndex + 1 + jj].getSize().y;
+
+                dataAccess++;    
+            }
 
             ii = 0;
             jj = 0;
@@ -152,14 +160,24 @@ namespace Sorting {
         }
         else if (process == 1) {
             if (ii < n1 && jj < n2) {
+
+                dataAccess += 2;
+                comparisons++;
+            
                 if (L[ii] <= R[jj]) {
                     data[kk].setFillColor(sf::Color::Yellow);
                     data[kk].setSize(sf::Vector2f(dataWidth, L[ii]));
+
+                    exchanges++;
+
                     ii++;
                 }
                 else {
                     data[kk].setFillColor(sf::Color::Yellow);
                     data[kk].setSize(sf::Vector2f(dataWidth, R[jj]));
+
+                    exchanges++;
+
                     jj++;
                 }
                 kk++;
@@ -173,6 +191,9 @@ namespace Sorting {
             if (ii < n1) {
                 data[kk].setFillColor(sf::Color::Yellow);
                 data[kk].setSize(sf::Vector2f(dataWidth, L[ii]));
+
+                exchanges++;
+
                 ii++;
                 kk++;
             }
@@ -185,6 +206,9 @@ namespace Sorting {
             if (jj < n2) {
                 data[kk].setFillColor(sf::Color::Yellow);
                 data[kk].setSize(sf::Vector2f(dataWidth, R[jj]));
+
+                exchanges++;
+
                 jj++;
                 kk++;
             }

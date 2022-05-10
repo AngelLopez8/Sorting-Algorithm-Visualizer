@@ -10,6 +10,8 @@ namespace Sorting {
         process = 0;
 
         currentIndex = length / 2 - 1;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**
@@ -33,6 +35,9 @@ namespace Sorting {
         else if (process == 1) {
             if (currentIndex >= 0) {
                 swap(data[0], data[currentIndex]);
+
+                exchanges++;
+
                 heapify(currentIndex, 0);
                 currentIndex--;
             }
@@ -56,14 +61,26 @@ namespace Sorting {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
 
-        if (left < n && data[left].getSize().y > data[largest].getSize().y)
+        if (left < n && data[left].getSize().y > data[largest].getSize().y){
             largest = left;
-        if (right < n && data[right].getSize().y > data[largest].getSize().y)
+
+            dataAccess += 2;
+            comparisons++;
+        }
+
+        if (right < n && data[right].getSize().y > data[largest].getSize().y) {
             largest = right;
+
+            dataAccess += 2;    
+            comparisons++;
+        }
         
         // Swap and continue heapifying if root is not largest
         if (largest != i) {
             swap(data[i], data[largest]);
+
+            exchanges++;
+
             heapify(n, largest);
         }
     }

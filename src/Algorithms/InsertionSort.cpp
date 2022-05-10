@@ -11,6 +11,8 @@ namespace Sorting {
         currentIndex = 1;
 
         process = 0;
+
+        comparisons = dataAccess = exchanges = 0;
     }
 
     /**
@@ -30,12 +32,17 @@ namespace Sorting {
                 // Read height of currentIndex to set as key value
                 key = data[currentIndex].getSize().y;
 
+                dataAccess++;
+
                 // Set elapsed to the previous index of currentIndex
                 elapsed = currentIndex - 1;
 
                 // Increment process to move to the next step
                 process++;
             }
+
+            comparisons++;
+            dataAccess++;
 
             if (key < data[elapsed].getSize().y && elapsed >= 0) {
                 // Set elapsed index to fillColor Red to indicate compared
@@ -46,6 +53,8 @@ namespace Sorting {
                     dataWidth,
                     data[elapsed].getSize().y
                 ));
+
+                exchanges++;
 
                 // Decrement elapsed to continue to next iteration
                 elapsed--;
@@ -59,6 +68,8 @@ namespace Sorting {
                     dataWidth,
                     key
                 ));
+
+                exchanges++;
 
                 // Increment currentIndex to continue to next iteration
                 currentIndex++;
