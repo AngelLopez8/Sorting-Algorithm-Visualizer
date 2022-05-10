@@ -3,8 +3,10 @@
 #include "include/SortingAlgorithms.hpp"
 
 int main() {
+    // Creates style for window
     sf::Uint32 style = sf::Style::Titlebar | sf::Style::Close;
 
+    // Creates Window
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Sorting Algorithm Visualizer", style);
 
     // Current Algorithm running

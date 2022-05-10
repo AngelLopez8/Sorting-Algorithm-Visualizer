@@ -18,7 +18,7 @@ namespace Sorting {
      */
     void MergeSort::sort() {
         if (!readyToMerge) {
-            // Runs mergesor recursion
+            // Runs mergesort recursion
             mergesort(0, length - 1);
 
             // Algorithm is ready to merge

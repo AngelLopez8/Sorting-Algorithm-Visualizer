@@ -36,10 +36,10 @@ namespace Sorting {
             // Runs a sort iteration
             void sort();
 
-            // 
+            // Main sorting function
             void quicksort();
 
-            //
+            // Sets partition point for iteration
             void partition();
     };
 }

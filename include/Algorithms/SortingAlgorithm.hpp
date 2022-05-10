@@ -54,17 +54,17 @@ namespace Sorting {
 
         protected:
             sf::RectangleShape* data;
-            int length;
-            int dataWidth;
-            int currentIndex;
+            int length;                 // Length of data  
+            int dataWidth;              // Width of each rectangle
+            int currentIndex;           // Current Rectangle in iteration
             
             bool sorted;
             
-            int comparisons;
-            int exchanges;
-            int dataAccess;
+            int comparisons;    // # of comparions made in algorithm
+            int exchanges;      // # of exchanges made in algorithm
+            int dataAccess;     // # of data access made in algorithm
 
-            std::string name;
+            std::string name;   // Algorithm name
 
             virtual void sort() = 0;
             virtual void set_default() = 0;
