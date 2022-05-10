@@ -119,9 +119,9 @@ namespace Sorting {
 
         // Create Text Instances
         sf::Text Name(name, arial, 10);
-        // sf::Text Compare("Comparisons: " + "std::to_string(comparisons)", arial, 5);
-        // sf::Text Exchange("Exchanges: " + std::to_string(exchanges), arial, 5);
-        // sf::Text DataAccess("Data Access: " + std::to_string(dataAccess), arial, 5);
+        sf::Text Compare("Comparisons: " + std::to_string(comparisons), arial, 5);
+        sf::Text Exchange("Exchanges: " + std::to_string(exchanges), arial, 5);
+        sf::Text DataAccess("Data Access: " + std::to_string(dataAccess), arial, 5);
 
         // Set Text Instance features
         Name.setCharacterSize(24);
@@ -129,22 +129,22 @@ namespace Sorting {
         Name.setStyle(sf::Text::Bold);
         Name.setPosition(sf::Vector2f(0, 0));
         
-        // Compare.setCharacterSize(24);
-        // Compare.setFillColor(sf::Color::Red);
-        // Compare.setPosition(sf::Vector2f(0, 20));
+        Compare.setCharacterSize(24);
+        Compare.setFillColor(sf::Color::Red);
+        Compare.setPosition(sf::Vector2f(0, 20));
         
-        // Exchange.setCharacterSize(24);
-        // Exchange.setFillColor(sf::Color::Red);
-        // Exchange.setPosition(sf::Vector2f(0, 40));
+        Exchange.setCharacterSize(24);
+        Exchange.setFillColor(sf::Color::Red);
+        Exchange.setPosition(sf::Vector2f(0, 40));
 
-        // DataAccess.setCharacterSize(24);
-        // DataAccess.setFillColor(sf::Color::Red);
-        // DataAccess.setPosition(sf::Vector2f(0, 60));
+        DataAccess.setCharacterSize(24);
+        DataAccess.setFillColor(sf::Color::Red);
+        DataAccess.setPosition(sf::Vector2f(0, 60));
     
         // Draw Text Instances
         window.draw(Name);
-        // window.draw(Compare);
-        // window.draw(Exchange);
-        // window.draw(DataAccess);
+        window.draw(Compare);
+        window.draw(Exchange);
+        window.draw(DataAccess);
     }
 }
